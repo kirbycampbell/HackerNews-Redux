@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { doArchiveStory } from "../actions/archive";
 import "./Story.css";
 import { ButtonInline } from "./Button";
+import "materialize-css";
 
 const Story = ({ story, columns, onArchive }) => {
   const { title, url, author, num_comments, points, objectID } = story;

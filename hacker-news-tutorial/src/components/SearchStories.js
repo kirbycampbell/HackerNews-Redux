@@ -35,9 +35,18 @@ class SearchStories extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
-        <input type="text" value={this.state.query} onChange={this.onChange} />
-        <Button type="submit">Search</Button>
+      <form onSubmit={this.onSubmit} class="col s12">
+        <div class="input-field inline">
+          <input
+            placeholder="Type your Search in Here"
+            type="text"
+            value={this.state.query}
+            onChange={this.onChange}
+          />
+        </div>
+        <Button type="submit" className="btn waves-effect waves-purple">
+          Search
+        </Button>
       </form>
     );
   }
